@@ -7,7 +7,13 @@ jobs:
     name: "firs job"
     runs-on: ubuntu-latest
     steps:
-      - name: Print greeting
-        run: echo "Hello World!"
-      - name: Print goodbye
-        run: echo "Done - bye!"
+      - name: before checkout
+        run: ls
+        shell: bash
+
+      - name: check out steps 
+        uses:  actions/checkout@v4
+
+      - name: after checkout
+        run: ls
+        shell: bash
