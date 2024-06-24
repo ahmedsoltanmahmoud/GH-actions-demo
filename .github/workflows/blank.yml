@@ -1,7 +1,7 @@
 name: First Workflow
-on: push
-      branches:
-         - "main"
+on: 
+  push
+
 jobs:
   first-job:
     name: "firs job"
